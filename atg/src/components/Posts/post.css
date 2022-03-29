@@ -1,0 +1,79 @@
+.activity .card {
+  width: 692px;
+  height: 472px;
+  text-align: start;
+}
+/* p {
+  margin: 0;
+} */
+.activity .card .card-title.h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  /* letter-spacing: 0em; */
+  text-align: left;
+}
+.activity .card .card-text {
+  width: 600px;
+  height: 60px;
+  font-family: IBM Plex Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.activity .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  margin-top: 32px;
+}
+.activity .info .left {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  height: 100%;
+}
+.activity .info .right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.shareDIv {
+  padding: 0.3rem;
+  background-color: lightgray;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+}
+.topic .left .cardlogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+  object-position: center;
+  border-radius: 50%;
+}
+.info .left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  margin-right: 1rem;
+}
+.topic p {
+     width: 79%;
+}
+.topic svg {
+  transform: rotate(90deg);
+}
+.description{
+  margin-top: 1rem;
+}

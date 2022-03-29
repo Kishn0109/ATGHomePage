@@ -1,0 +1,47 @@
+.Navbar {
+  height: 74px;
+  padding: 0px 4.3rem;
+}
+.navlogo {
+  font-size: xx-large;
+  font-weight: 335;
+  letter-spacing: 0.14rem;
+  display: flex;
+  align-items: center;
+}
+.navlogo img {
+  height: 1.5rem;
+  margin: 0px 0.14rem;
+}
+.Atg {
+  font-size: xx-large;
+  color: #27a365;
+}
+.navinput {
+  border-radius: 1.313rem;
+  /* border: 1px solid black; */
+  background-color: violet;
+  background: #f2f2f2;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  width: 22.5rem;
+}
+.navinput svg {
+  margin-left: 1.047rem;
+  opacity: 0.5;
+  margin-top: 0.172rem;
+}
+.navinput input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+.navAuthentication {
+  font-weight: 500;
+}
+.navAuthentication a {
+  /* font-size: larger; */
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.navigation .navigationleft .list {
+  height: 100%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+}
+.navigation .navigationleft .list.active {
+  border-bottom: 2px solid black;
+}
+.navigation {
+  box-shadow: 0 0.1rem 0.2222rem rgb(0 0 0 / 15%) !important;
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin: 2rem 0rem;
+}
+.navigationleft {
+  display: flex;
+  justify-content: space-around;
+  width: 39%;
+}
