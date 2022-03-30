@@ -51,8 +51,8 @@ function Post() {
     );
   };
   return (
-    <div className="d-flex container-fluid container-md container-lg justify-content-sm-center">
-      <div className="activity cards">
+    <div className="d-flex container-md p-0 container-lg justify-content-sm-center">
+      <div className="activity cards p-0 px-lg-4 px-md-4">
         <Card style={styles.customcard}>
           <Card.Img variant="top" src={Rectangle2} />
           <Card.Body>
@@ -119,7 +119,7 @@ function Post() {
       <div className="join-group d-none d-md-block d-lg-block">
         <div className="inputlocation">
           <LocationOnIcon />
-          <input type="text" />
+          <input type="text" placeholder="Seach groups" />
           <CloseIcon />
         </div>
         <div className="taypograp"></div>

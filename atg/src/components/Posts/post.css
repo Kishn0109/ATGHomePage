@@ -220,6 +220,63 @@
   background-color: black;
   color: white;
 }
+activity.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.activity .card {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+.activity.cards {
+  /* flex: 0.7 1; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  flex: 1;
+}
+.modal-signinSignup .right .body-title {
+  font-size: small;
+}
+.modal-signinSignup .right {
+  display: none;
+}
+.linksignin {
+  /* font-size: 2rem; */
+  font-weight: 700;
+  margin: 1rem 0rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.d-flex.container-md.container-lg.justify-content-sm-center {
+  padding: 0;
+}
+.wrightpostInMobile {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: burlywood;
+  right: 1rem;
+  bottom: 2rem;
+  position: fixed;
+}
+.exitweb {
+  display: block;
+}
+.signupheader {
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
   .content.text-start {
     left: 8rem;
@@ -275,11 +332,10 @@
     margin: auto;
     text-align: center;
   }
-  .d-flex.container-md.container-lg.justify-content-sm-center{
+  .d-flex.container-md.container-lg.justify-content-sm-center {
     padding: 0;
-
   }
-  .wrightpostInMobile{
+  .wrightpostInMobile {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
@@ -291,10 +347,10 @@
     bottom: 2rem;
     position: fixed;
   }
-  .exitweb{
+  .exitweb {
     display: block;
   }
-  .signupheader{
+  .signupheader {
     display: block;
   }
 }

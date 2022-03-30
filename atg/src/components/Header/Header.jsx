@@ -10,8 +10,12 @@ function Header() {
       <MobileHeader />
       <Navbar />
       <div className="headerHome position-relative">
-        <div className="exitweb position-absolute"><LogoutIcon/></div>
-        <div className="signupheader position-absolute">Sign Up</div>
+        <div className="d-block d-lg-none d-md-none exitweb position-absolute">
+          <LogoutIcon />
+        </div>
+        <div className="signupheader position-absolute d-block d-lg-none d-md-none">
+          Sign Up
+        </div>
         <img src={rec} alt="" />
         <div className="content text-start">
           <h1>Computer Engineering</h1>
