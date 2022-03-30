@@ -3,12 +3,15 @@ import "./header.css";
 import MobileHeader from "./MobileHeader";
 import Navbar from "./Navbar/Navbar";
 import rec from "../../Assets/Header/Rectangle2.png"
+import LogoutIcon from "@mui/icons-material/Logout";
 function Header() {
   return (
     <div>
       <MobileHeader />
       <Navbar />
-      <div className="headerHome">
+      <div className="headerHome position-relative">
+        <div className="exitweb position-absolute"><LogoutIcon/></div>
+        <div className="signupheader position-absolute">Sign Up</div>
         <img src={rec} alt="" />
         <div className="content text-start">
           <h1>Computer Engineering</h1>

@@ -10,7 +10,7 @@
   border-bottom: 2px solid black;
 }
 .navigation {
-  box-shadow: 0 0.1rem 0.2222rem rgb(0 0 0 / 15%) !important;
+  /* box-shadow: 0 0.1rem 0.2222rem rgb(0 0 0 / 15%) !important; */
   display: flex;
   justify-content: space-between;
   height: 3rem;
@@ -30,7 +30,7 @@
 
 .navigationleft {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 width: calc(100% - 300px);}
 
 @media screen and (min-width: 1024px) {

@@ -122,7 +122,7 @@
   margin-right: 1rem;
 }
 .followbtn {
-  border-radius: 0.8rem;
+  border-radius: 1.8rem;
   background-color: lightgray;
   padding: 0.3rem 0.8rem;
 }
@@ -216,7 +216,10 @@
   width: 100%;
   flex: 0.2;
 }
-
+.Rgroup .designtrue {
+  background-color: black;
+  color: white;
+}
 @media screen and (min-width: 1024px) {
   .content.text-start {
     left: 8rem;
@@ -245,7 +248,7 @@
     align-items: center;
     flex: 1;
   }
-  
+
   .activity .card {
     width: 100%;
     margin: 1rem 0rem;
@@ -271,5 +274,27 @@
     display: block;
     margin: auto;
     text-align: center;
+  }
+  .d-flex.container-md.container-lg.justify-content-sm-center{
+    padding: 0;
+
+  }
+  .wrightpostInMobile{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: burlywood;
+    right: 1rem;
+    bottom: 2rem;
+    position: fixed;
+  }
+  .exitweb{
+    display: block;
+  }
+  .signupheader{
+    display: block;
   }
 }

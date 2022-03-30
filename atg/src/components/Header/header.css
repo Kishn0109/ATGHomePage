@@ -82,14 +82,44 @@
   .navinput input {
     font-size: smaller;
   }
-  .navinput{
-        width: 17.5rem;
+  .navinput {
+    width: 17.5rem;
   }
   .navAuthentication {
     font-size: smaller;
   }
 }
-
+.exitweb {
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+  color: white;
+  border: 2px solid white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+.exitweb svg {
+  transform: rotate(180deg);
+}
+.signupheader {
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  color: white;
+  border: 2px solid white;
+  padding: 0.3rem 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
 }

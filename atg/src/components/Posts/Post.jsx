@@ -9,6 +9,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import HomeNav from "../Home/HomeNav";
 import "./post.css";
 function Post() {
+  // const [friend,setfriend] = useState(false);
   const styles = {
     customButton: {
       backgroundColor: "#0B0C10",
@@ -28,14 +29,24 @@ function Post() {
       width: "100%",
     },
   };
-  const recommendedgroup = (link, Name) => {
+  const recommendedgroup = (link, Name, isfollowed) => {
+    console.log(isfollowed);
     return (
       <div className="Rgroup">
         <div>
           <img src={Rectangle2} alt="logo" />
           {Name}
         </div>
-        <div className="followbtn">Follow</div>
+        <div
+          className={`followbtn ${isfollowed == true && "designtrue"}`}
+          onClick={() => {
+            let toggel = !isfollowed;
+            recommendedgroup(link, Name, toggel);
+            console.log("clicked", toggel);
+          }}
+        >
+          {isfollowed == false ? "follow" : "followed"}
+        </div>
       </div>
     );
   };
@@ -117,10 +128,10 @@ function Post() {
             <ThumbUpIcon />
             RECOMMENDED GROUPS
           </h3>
-          {recommendedgroup("link", "Kishan Lal Rai")}
-          {recommendedgroup("link", "Nikhil  Rai")}
-          {recommendedgroup("link", "Kishan")}
-          {recommendedgroup("link", "Amresh Verma")}
+          {recommendedgroup("link", "Kishan Lal Rai", false)}
+          {recommendedgroup("link", "Nikhil  Rai", true)}
+          {recommendedgroup("link", "Kishan", false)}
+          {recommendedgroup("link", "Amresh Verma", false)}
         </div>
       </div>
     </div>
