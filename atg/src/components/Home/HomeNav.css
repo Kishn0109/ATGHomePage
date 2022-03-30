@@ -15,9 +15,47 @@
   justify-content: space-between;
   height: 3rem;
   margin: 2rem 0rem;
+  height: 3rem;
 }
+.navigationwraper {
+  position: sticky;
+  top: -1px;
+  z-index: 999;
+  padding: 0;
+  
+}
+.gray{
+  background-color: gray;
+}
+
 .navigationleft {
   display: flex;
   justify-content: space-around;
-  width: 39%;
+width: calc(100% - 300px);}
+
+@media screen and (min-width: 1024px) {
+  .content.text-start {
+    left: 8rem;
+  }
 }
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navigationleft {
+    font-size: 1.5rem;
+  }
+  .navigation .navigationleft .list{
+    font-size: small;
+  }
+  .navinput {
+    width: 17.5rem;
+  }
+  .navAuthentication {
+    font-size: smaller;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+

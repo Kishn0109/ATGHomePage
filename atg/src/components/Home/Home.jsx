@@ -5,6 +5,7 @@ import HomeNav from "./HomeNav";
 function Home() {
   return (
     <div>
+      <HomeNav />
       <Post />
     </div>
   );

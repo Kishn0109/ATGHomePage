@@ -45,3 +45,28 @@
   /* font-size: larger; */
   text-decoration: none;
 }
+@media screen and (min-width: 1024px) {
+  .content.text-start {
+    left: 8rem;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navlogo {
+    font-size: 1.5rem;
+  }
+  .navinput input {
+    font-size: smaller;
+  }
+  .navinput {
+    width: 17.5rem;
+  }
+  .navAuthentication {
+    font-size: smaller;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}

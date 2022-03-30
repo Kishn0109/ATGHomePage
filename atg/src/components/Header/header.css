@@ -24,7 +24,7 @@
   background-color: darkslategray;
   position: relative;
 }
-.headerHome::before {
+/* .headerHome::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -35,16 +35,15 @@
   background-size: cover;
   opacity: 0.6;
   background-color: black;
-  /* right: -25rem; */
   bottom: 0rem;
-}
+} */
 .headerHome .content {
   position: absolute;
   bottom: 80px;
   left: 2rem;
   height: 47px;
   /* width: 378px; */
-  left: 200px;
+  left: 2rem;
   /* top: 358px; */
 }
 .headerHome .content h1 {
@@ -52,8 +51,93 @@
   font-weight: bold;
 }
 .headerHome .content span {
-      color: white;
-    font-weight: 400;
-    margin-left: 0px;
-    font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+  margin-left: 0px;
+  font-size: 1.2rem;
 }
+.headerHome img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+/* @media screen and (max-width: 868px) {
+  .content.text-start {
+    left:0;
+  }
+} */
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .content.text-start {
+    left: 8rem;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navlogo {
+    font-size: 1.5rem;
+  }
+  .navinput input {
+    font-size: smaller;
+  }
+  .navinput{
+        width: 17.5rem;
+  }
+  .navAuthentication {
+    font-size: smaller;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+
+/* For Mobile Landscape View */
+/* @media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+  .content.text-start {
+    left:0;
+  }
+}
+ 
+/* For Mobile Phones Portrait or Landscape View
+@media screen and (max-device-width: 640px) {
+  .content.text-start {
+    left:0;
+  }
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+/* @media screen and (min-device-width: 320px) */
+/* and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    color: black;
+  }
+} */
+
+/* For iPhone 5 Portrait or Landscape View */
+/* @media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    color: black;
+  }
+} */
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+/* @media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .gfg-div {
+    width: 400px;
+    height: 400px;
+    background-color: darkgoldenrod;
+    color: black;
+  }
+}  */

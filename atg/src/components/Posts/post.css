@@ -6,9 +6,14 @@
 /* p {
   margin: 0;
 } */
+.activity .card-body {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+}
 .activity .card .card-title.h5 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
   font-family: IBM Plex Sans;
   font-size: 18px;
   font-style: normal;
@@ -16,10 +21,11 @@
   line-height: 23px;
   /* letter-spacing: 0em; */
   text-align: left;
+  flex: 0.2;
 }
 .activity .card .card-text {
-  width: 600px;
-  height: 60px;
+  /* width: 600px;
+  height: 60px; */
   font-family: IBM Plex Sans;
   font-size: 22px;
   font-style: normal;
@@ -27,13 +33,15 @@
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
+  flex: 0.3;
 }
 .activity .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 24px;
-  margin-top: 32px;
+  /* height: 24px;
+  margin-top: 32px; */
+  flex: 0.3;
 }
 .activity .info .left {
   display: flex;
@@ -69,11 +77,199 @@
   margin-right: 1rem;
 }
 .topic p {
-     width: 79%;
+  width: 79%;
 }
 .topic svg {
   transform: rotate(90deg);
 }
-.description{
+.description {
+  /* margin-top: 1rem; */
+  flex: 0.2;
+}
+
+.activity.cards {
+  flex: 0.7;
+}
+.join-group {
+  flex: 0.3;
+}
+.inputlocation {
+  border-bottom: 2px solid lightgray;
+  color: black;
+  padding: 14px 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputlocation input {
+  border: none;
+  outline: none;
+  border-left: 1px solid gray;
+  color: lightgray;
+}
+.Rgroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-weight: 600;
+  margin: 1.5rem 0rem;
+}
+.Rgroup img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  margin-right: 1rem;
+}
+.followbtn {
+  border-radius: 0.8rem;
+  background-color: lightgray;
+  padding: 0.3rem 0.8rem;
+}
+
+.recomdation-group h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin: 2rem 0rem;
+}
+.recomdation-group h3 svg {
+  margin-right: 1rem;
+}
+
+/* modal */
+
+.modal-signinSignup .left button {
+  border-radius: 2rem;
+  margin: 0.4rem 0rem;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1.5px solid darkgray;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.modal-signinSignup .left .Account {
+  background-color: blue;
+  font-weight: 700;
+  color: white;
+  font-size: inherit;
+}
+.modal-signinSignup .left .pfacebookAuthentication svg {
+  fill: blue;
+}
+.buttons {
   margin-top: 1rem;
+}
+.modal-signinSignup .left input {
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid lightgray;
+  outline: none;
+  background-color: #ffffff47;
+}
+.modal-signinSignup .left .input {
+  border: 1px solid lightgray;
+  border-radius: 0.2rem;
+  background-color: #b1afaf47;
+}
+.modal-signinSignup .left .body-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0rem;
+}
+.modal-signinSignup .modelheader {
+  background: linear-gradient(180deg, #31e63552, #acfda86e);
+  font-size: 1rem;
+  color: green;
+}
+.activity .card {
+  width: 90%;
+}
+.modal-signinSignup .right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.modal-signinSignup .right .body-title {
+  margin-top: 2rem;
+  text-align: right;
+  width: 100%;
+  flex: 0.1 1;
+  margin-bottom: 1rem;
+}
+.modal-signinSignup .right .img {
+  flex: 0.8;
+}
+.modal-signinSignup .right img {
+  width: 100%;
+  height: 100%;
+}
+.modal-signinSignup .right .footer {
+  margin: 2rem 0rem;
+  text-align: right;
+  width: 100%;
+  flex: 0.2;
+}
+
+@media screen and (min-width: 1024px) {
+  .content.text-start {
+    left: 8rem;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .linksignin {
+    /* font-size: 2rem; */
+    font-weight: 700;
+    margin: 1rem 0rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 767px) {
+  .activity.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .activity .card {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+  .activity.cards {
+    /* flex: 0.7 1; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    flex: 1;
+  }
+  .modal-signinSignup .right .body-title {
+    font-size: small;
+  }
+  .modal-signinSignup .right {
+    display: none;
+  }
+  .linksignin {
+    /* font-size: 2rem; */
+    font-weight: 700;
+    margin: 1rem 0rem;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 }
